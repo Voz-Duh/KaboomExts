@@ -98,3 +98,9 @@ function drawShadowPolygon(lpos, pts, pos, color) {
 		drawShadowLine(lpos, pts[i], pts[(i == pts.length-1 ? -1 : i)+1], pos, color)
 	}
 }
+
+function drawShadowLines(lpos, pts, pos, color) {
+	for (let i = 0; i < pts.length; i++) {
+		drawShadowLine(lpos, pts[i], pts[(i == pts.length-1 ? -1 : i)+1], pos, color, true)
+	}
+}
